@@ -1,0 +1,19 @@
+<section class="container  px-3 py-4">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-light">Ahmed's Tasks</h2>
+        <button class="btn btn-secondary" (click)="onAddNewTask()">Add New Task</button>
+    </header>
+
+    
+    @if (createNewTaskFlg()) {
+      <app-new-tasks (closeSelect)="onClose()"></app-new-tasks>
+    }
+
+    <ul class="list-group">
+        @for (task of getAllTasks; track task.id) {
+            <li class="list-group-item mb-2 p-3 shadow-sm rounded bg-secondary text-light">
+                <app-task [task]="task"></app-task>
+            </li>
+        }
+    </ul>
+</section>
