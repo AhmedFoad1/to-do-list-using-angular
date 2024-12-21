@@ -1,0 +1,10 @@
+<div class="card shadow-sm mb-3 bg-dark text-light">
+    <article class="card-body">
+        <h5 class="card-title">{{task().title}}</h5>
+        <time class="text-muted" datetime="Date">{{task().dueDate | date:'short'}}</time>
+        <p class="card-text mt-2">{{task().summary}}</p>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-success btn-sm" (click)="onComplete()">Done</button>
+        </div>
+    </article>
+</div>

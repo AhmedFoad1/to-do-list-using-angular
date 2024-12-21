@@ -1,0 +1,81 @@
+
+.backdrop {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050; 
+}
+
+
+dialog {
+    background: #343a40; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 500px; 
+    width: 100%; 
+    color: #f8f9fa; 
+}
+
+
+dialog h2 {
+    margin-bottom: 20px;
+    color: #f8f9fa;
+}
+
+dialog p {
+    margin-bottom: 15px;
+}
+
+dialog label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+dialog input,
+dialog textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #495057;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #495057; 
+    color: #f8f9fa; 
+}
+
+dialog .actions {
+    text-align: right;
+}
+
+dialog .actions button {
+    margin-left: 10px;
+}
+
+
+button[type="button"] {
+    background-color: #6c757d; 
+    color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #007bff; 
+    color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}

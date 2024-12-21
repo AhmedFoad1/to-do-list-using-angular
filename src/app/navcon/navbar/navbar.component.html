@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg" style="background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(15, 24, 29) 24.5%, rgb(19, 30, 37) 66%);">
+    <div class="container-fluid d-flex justify-content-between px-5">
+      <a class="navbar-brand" href="#">
+        <p class="fw-bold mb-0"> 
+          <span class="text-dark fs-2">Angular </span>
+          <span class="text-primary fs-2">Task</span>
+        </p>
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active  text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-white-50" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-white-50" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown pe-5">
+              <button class="btn btn-secondary dropdown-toggle bg-primary fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Join in
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)="showLogin()">Log In</a></li>
+                <li><a class="dropdown-item" (click)="showSignUp()">Sign Up</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
