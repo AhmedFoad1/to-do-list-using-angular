@@ -1,0 +1,22 @@
+
+<div class = "container-fluid">
+    <app-navbar 
+      (loginClicked)="LoginClick()" 
+      (signUpClicked)="SignUpClick()">
+    </app-navbar>
+  
+    <div *ngIf="showLoginComponent">
+      <app-log-in></app-log-in>
+    </div>
+    <div *ngIf="showSignUpComponent">
+      <app-sign-up></app-sign-up>
+    </div>
+  
+  
+    <div class="tasks">
+  <app-tasks>
+    
+  </app-tasks>
+</div>
+</div>
+<app-footer></app-footer>
