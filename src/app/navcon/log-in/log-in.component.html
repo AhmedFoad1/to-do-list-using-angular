@@ -1,23 +1,7 @@
 <div class="fullscreen" *ngIf="login">
-    <!--
-      The login screen is displayed when the user isn't logged in.
-      The form is wrapped in a fullscreen div to prevent the user from
-      clicking outside the form and closing it.
-    -->
     <div class="login-container">
-      <!--
-        The form is wrapped in a login-container to center the form on the page.
-      -->
       <h2 class="text-center mb-4">Log In</h2>
-      <!--
-        The form is an ngForm, which allows us to handle the form submission
-        and reset the form data when the user submits the form.
-      -->
       <form #form="ngForm" (ngSubmit)="onSubmit(form)">
-        <!--
-          The email and password inputs are required, and the user must enter
-          a valid email address and password to submit the form.
-        -->
         <div class="mb-3">
           <input
             type="email"
@@ -40,12 +24,8 @@
             ngModel
           />
         </div>
-        <!--
-          The submit button is a primary button, which is a blue button with
-          white text. The button is also given the class "w-100" to make it
-          take up the full width of the form.
-        -->
         <button type="submit" class="btn btn-primary w-100">Submit</button>
       </form>
     </div>
   </div>
+  
